@@ -1,9 +1,9 @@
 using UnityEngine;
 
-public class TestScript : MonoBehaviouasdfr
+public class TestScript : MonoBehaviour
 {
 	private void Awake()
 	{
-		Debug.Log(gameobject.name);
+		Debug.Log(gameObject.name);
 	}
 }
