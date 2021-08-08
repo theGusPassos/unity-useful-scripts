@@ -12,6 +12,8 @@ namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Drag
 
         public void OnDrag(PointerEventData eventData)
         {
+            if (!Input.GetMouseButton(0)) return;
+
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 canvasRectTransform,
                 Input.mousePosition, 

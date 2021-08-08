@@ -18,7 +18,8 @@ namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Drag
         
         public void OnDrag(PointerEventData eventData)
         {
-            if (!dragState.CanDrag()) return;
+            if (!Input.GetMouseButton(0) 
+                || !dragState.CanDrag()) return;
 
             rectTransform.position += (Vector3)eventData.delta;
         }
