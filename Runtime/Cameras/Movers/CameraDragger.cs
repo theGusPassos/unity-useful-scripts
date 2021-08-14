@@ -11,7 +11,6 @@ namespace Packages.unity_useful_scripts.Runtime.Cameras.Movers
         Vector3 currentPosition;
         Vector3 cameraPosition;
         IWorldPositionBounds bounds;
-
         Action updateFn;
 
         void Awake()
