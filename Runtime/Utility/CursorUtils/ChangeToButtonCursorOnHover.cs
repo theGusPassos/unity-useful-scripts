@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace Packages.unity_useful_scripts.Runtime.Utility.CursorUtils
 {
-    public class ChangeCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class ChangeToButtonCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         public void OnPointerEnter(PointerEventData eventData)
             => CursorChanger.Instance.ShowOnButtonCursor();
