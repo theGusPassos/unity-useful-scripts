@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
-using UnityEngine.EventSystems;
 
-namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Animations
+namespace Packages.unity_useful_scripts.Runtime.Sprites.Interactables
 {
-    public class ScaleOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler 
+    public class ScaleSpriteOnHover : MonoBehaviour
     {
         [SerializeField] float transformScale;
         [SerializeField] float animationSpeed;
@@ -26,18 +25,18 @@ namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Animations
                     transform.localScale,
                     targetScale,
                     timer / animationSpeed);
-
+            
                 timer += Time.deltaTime;
             }
         }
 
-        public void OnPointerEnter(PointerEventData eventData)
+        void OnMouseEnter()
         {
             timer = 0;
             targetScale = onHoverScale;
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        void OnMouseExit()
         {
             timer = 0;
             targetScale = originalScale;
