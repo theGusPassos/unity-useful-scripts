@@ -21,14 +21,17 @@ namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Menu
 
         public void OnMenuOpenerHover()
         {
-            scaler.GoToNewScale();
+            //scaler.GoToNewScale();
             menu.SetActive(true);
         }
 
         public void OnMenuHoverExit()
         {
-            scaler.ResetScale();
+            //scaler.ResetScale();
             menu.SetActive(false);
         }
+
+        public void ForceClose() => OnMenuHoverExit();
     }
 }
+
