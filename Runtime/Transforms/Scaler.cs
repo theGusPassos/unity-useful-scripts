@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Packages.unity_useful_scripts.Runtime.Ui.Interactables.Animations
+namespace Packages.unity_useful_scripts.Runtime.Transforms
 {
     public class Scaler : MonoBehaviour
     {
