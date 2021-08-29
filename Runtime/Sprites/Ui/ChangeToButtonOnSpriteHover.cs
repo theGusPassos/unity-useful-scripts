@@ -9,6 +9,6 @@ namespace Packages.unity_useful_scripts.Runtime.Sprites.Ui
             => CursorChanger.Instance.ShowOnButtonCursor();
 
         void OnMouseExit()
-            => CursorChanger.Instance.ShowOnButtonCursor();
+            => CursorChanger.Instance.ShowDefaultCursor();
     }
 }

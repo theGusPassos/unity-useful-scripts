@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Packages.unity_useful_scripts.Runtime.Sprites.Interactables
+namespace Packages.unity_useful_scripts.Runtime.Sprites.Interactables.Drag
 {
     public class DraggableSprite : MonoBehaviour
     {
@@ -9,7 +9,7 @@ namespace Packages.unity_useful_scripts.Runtime.Sprites.Interactables
 
         void OnMouseDown()
         {
-            offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(
+            offset = transform.position - Camera.main.ScreenToWorldPoint(
                 new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
         }
 
