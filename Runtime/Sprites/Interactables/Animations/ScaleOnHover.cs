@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Packages.unity_useful_scripts.Runtime.Sprites.Interactables.Animations
 {
     [RequireComponent(typeof(Scaler))]
-    public class ScaleSpriteOnHover : MonoBehaviour
+    public class ScaleOnHover : MonoBehaviour
     {
         [SerializeField] float transformScale;
         [SerializeField] float animationSpeed;
